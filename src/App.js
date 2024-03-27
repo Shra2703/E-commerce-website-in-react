@@ -10,6 +10,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import ItemDetails from "./Pages/ItemDetails";
+import Error from "./Pages/Error";
 
 function App() {
   // making routes
@@ -17,6 +18,7 @@ function App() {
     {
       path: "/",
       element: <Navbar />,
+      errorElement: <Error />,
       children: [
         { index: true, element: <Home /> },
         // { path: "/list", element: <List /> },

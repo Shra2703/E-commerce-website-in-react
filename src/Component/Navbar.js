@@ -28,7 +28,7 @@ function Navbar() {
             }
           >
             {" "}
-            List
+            Items
           </NavLink>
           <NavLink
             to="/contact"
