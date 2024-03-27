@@ -36,10 +36,6 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
-  background-color: #e1d1f976;
-}
-
 .home {
   display: flex;
   flex-direction: column;
@@ -118,9 +114,20 @@ form button {
   padding: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.item h3 {
+.item a {
   align-self: flex-start;
 }
 .item img {
   width: 150px;
+}
+
+.item-details img {
+  width: 40vw;
+}
+
+.specs {
+  margin: 30px;
+}
+.specs li {
+  margin-block: 5px;
 }

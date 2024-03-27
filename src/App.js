@@ -12,6 +12,7 @@ import {
 
 function App() {
  
+  // making routes
   const router = createBrowserRouter([
     {
       path: "/",
@@ -24,6 +25,7 @@ function App() {
     },
   ]);
 
+  // 2nd way of making it
   const routes = createRoutesFromElements(
     <>
       <Route path="/" element={<Navbar />} />
