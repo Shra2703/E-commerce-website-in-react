@@ -37,7 +37,7 @@ function Navbar() {
             }
           >
             {" "}
-            Contact1
+            Contact
           </NavLink>
         </nav>
       </div>

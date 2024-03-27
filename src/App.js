@@ -9,9 +9,9 @@ import {
   createRoutesFromChildren,
   createRoutesFromElements,
 } from "react-router-dom";
+import ItemDetails from "./Pages/ItemDetails";
 
 function App() {
- 
   // making routes
   const router = createBrowserRouter([
     {
@@ -19,8 +19,15 @@ function App() {
       element: <Navbar />,
       children: [
         { index: true, element: <Home /> },
-        { path: "/list", element: <List /> },
+        // { path: "/list", element: <List /> },
         { path: "/contact", element: <Contact /> },
+        {
+          path: "/list",
+          children: [
+            { index: true, element: <List /> },
+            { path: ":id", element: <ItemDetails /> },
+          ],
+        },
       ],
     },
   ]);
