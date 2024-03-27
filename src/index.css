@@ -4,6 +4,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 .page {
   padding: 20px;
 }
@@ -36,15 +42,42 @@ nav a {
   font-weight: bold;
 }
 
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  /* margin: auto 50px; */
+}
+
 .home {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 50px;
+  border-radius: 20px;
+  width: 60%;
+  box-shadow: 5px 5px 17px #c2a5ed;
+}
+
+.home h3 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .home > img {
   width: 40vw;
   margin: 0 auto;
+  height: 500px;
+  object-fit: cover;
+}
+
+.home p {
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: center;
 }
 .socails {
   display: flex;
@@ -56,6 +89,30 @@ nav a {
 .socails img {
   width: 40px;
   cursor: pointer;
+}
+
+.auth-status {
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 40px;
+  background-color: #9a64ec;
+}
+
+.auth-status span {
+  padding: 10px 15px;
+  border-radius: 30px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-inline: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.auth-status .active {
+  border: 2px solid #fff;
+  background-color: #e1d1f976;
+  color: #fff;
 }
 
 .contact form {
@@ -127,9 +184,22 @@ form button {
 
 .specs {
   margin: 30px;
+  font-size: 18px;
 }
 .specs li {
   margin-block: 5px;
+}
+
+#back {
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #9a64ec;
+  width: 200px;
+
+  padding: 16px;
+  color: #fff;
+  margin: auto 38%;
 }
 
 .not-found {

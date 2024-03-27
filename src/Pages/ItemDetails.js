@@ -9,18 +9,23 @@ function ItemDetails() {
 
   return (
     <>
-      <div className="item-details page">
-        <h3>{item.name}</h3>
-        <img src={item.image} alt={item.name} />
-        <ul className="specs">
-          {item.specs.map((specs, i) => (
-            <li key={i}>{specs}</li>
-          ))}
-        </ul>
+      <div id="container">
+        <div className="item-details page home">
+          <h3>{item.name}</h3>
+          <img src={item.image} alt={item.name} />
+          <ul className="specs">
+            {item.specs.map((specs, i) => (
+              <li key={i}>{specs}</li>
+            ))}
+          </ul>
 
-        <p>{item.description}</p>
-        <br /><br />
-        <Link to = "/list">Back to List page</Link>
+          <p>{item.description}</p>
+          <br />
+          <br />
+          <Link to="/list" id="back">
+            Back to List page
+          </Link>
+        </div>
       </div>
     </>
   );
